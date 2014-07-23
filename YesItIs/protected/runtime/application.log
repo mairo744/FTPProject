@@ -1,0 +1,1800 @@
+2014/07/11 13:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/".' in /volume1/web/YesItIs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/')
+#1 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/
+---
+2014/07/11 13:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/admin".' in /volume1/web/YesItIs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#1 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/admin
+---
+2014/07/11 15:09:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "_form".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('_form')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('_form')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/_form')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/_form
+---
+2014/07/11 15:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "form".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('form')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('form')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/form')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/form
+---
+2014/07/11 15:09:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/view
+---
+2014/07/12 21:58:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /volume1/web/YesItIs/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /volume1/web/YesItIs/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /volume1/web/YesItIs/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 /volume1/web/YesItIs/protected/components/UserIdentity.php(15): CActiveRecord->findByAttributes(Array)
+#8 /volume1/web/YesItIs/protected/models/LoginForm.php(40): UserIdentity->authenticate()
+#9 /volume1/web/YesItIs/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /volume1/web/YesItIs/yii/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /volume1/web/YesItIs/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /volume1/web/YesItIs/protected/controllers/SiteController.php(88): CModel->validate()
+#13 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=site/login
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=site/login
+---
+2014/07/12 21:59:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /volume1/web/YesItIs/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /volume1/web/YesItIs/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /volume1/web/YesItIs/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(1469): CActiveRecord->getCommandBuilder()
+#7 /volume1/web/YesItIs/protected/controllers/SiteController.php(32): CActiveRecord->findAll()
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/YesItIs/index.php
+---
+2014/07/12 22:14:28 [error] [exception.CException] exception 'CException' with message 'Property "Role.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/protected/models/Role.php(83): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/protected/views/role/admin.php(16): Role->search()
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /volume1/web/YesItIs/protected/controllers/RoleController.php(140): CController->render('admin', Array)
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=role/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=user/index
+---
+2014/07/12 22:14:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('adminonly')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('authtest/admino...')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php?r=authtest/adminonly
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/12 22:14:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('trainersonly')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('authtest/traine...')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php?r=authtest/trainersonly
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/12 22:15:54 [error] [exception.CException] exception 'CException' with message 'Property "Role.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/protected/models/Role.php(83): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/protected/views/role/admin.php(16): Role->search()
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /volume1/web/YesItIs/protected/controllers/RoleController.php(140): CController->render('admin', Array)
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=role/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/13 08:22:13 [error] [exception.CException] exception 'CException' with message 'Property "Role.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/protected/models/Role.php(83): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/protected/views/role/admin.php(16): Role->search()
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /volume1/web/YesItIs/protected/controllers/RoleController.php(140): CController->render('admin', Array)
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=role/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/13 08:24:19 [error] [exception.CException] exception 'CException' with message 'Property "Role.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/protected/models/Role.php(83): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/protected/views/role/admin.php(16): Role->search()
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /volume1/web/YesItIs/protected/controllers/RoleController.php(140): CController->render('admin', Array)
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=role/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/13 08:26:35 [error] [exception.CException] exception 'CException' with message 'Property "Role.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/protected/models/Role.php(83): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/protected/views/role/admin.php(16): Role->search()
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /volume1/web/YesItIs/protected/controllers/RoleController.php(140): CController->render('admin', Array)
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=role/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/
+---
+2014/07/13 08:26:50 [error] [exception.CException] exception 'CException' with message 'Property "Role.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/protected/models/Role.php(83): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/protected/views/role/admin.php(16): Role->search()
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /volume1/web/YesItIs/protected/controllers/RoleController.php(140): CController->render('admin', Array)
+#8 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#19 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/YesItIs/index.php?r=role/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/13 10:37:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('adminonly')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('authtest/admino...')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php?r=authtest/adminonly
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=authtest/index
+---
+2014/07/13 12:10:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /volume1/web/YesItIs/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=gii
+---
+2014/07/13 12:11:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /volume1/web/YesItIs/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=gii
+---
+2014/07/13 12:12:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /volume1/web/YesItIs/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=gii
+---
+2014/07/13 12:12:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /volume1/web/YesItIs/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=gii
+---
+2014/07/18 11:11:19 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php:109
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(147): CGridView->init()
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 /volume1/web/YesItIs/protected/views/user/admin.php(38): CBaseController->widget('zii.widgets.gri...', Array)
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#5 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#8 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#9 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#20 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:12:35 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getData".' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getData', Array)
+#1 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(111): CActiveRecord->__call('getData', Array)
+#2 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(111): User->getData()
+#3 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(147): CGridView->init()
+#5 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#6 /volume1/web/YesItIs/protected/views/user/admin.php(40): CBaseController->widget('zii.widgets.gri...', Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#8 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#11 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#12 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#13 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#23 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:12:45 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getData".' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getData', Array)
+#1 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(111): CActiveRecord->__call('getData', Array)
+#2 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(111): User->getData()
+#3 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(339): CBaseListView->init()
+#4 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(147): CGridView->init()
+#5 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#6 /volume1/web/YesItIs/protected/views/user/admin.php(40): CBaseController->widget('zii.widgets.gri...', Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#8 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#11 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#12 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#13 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#23 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:16:49 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(1802): CHtml::resolveValue(Object(User), 'description')
+#3 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CDataColumn.php(101): CHtml::activeDropDownList(Object(User), 'description', Array, Array)
+#4 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#5 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#6 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#7 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#8 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#12 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#13 /volume1/web/YesItIs/protected/views/user/admin.php(45): CBaseController->widget('zii.widgets.gri...', Array)
+#14 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#15 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#16 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#17 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#18 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#19 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#20 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#27 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#29 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#30 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#31 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:19:03 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(User), 'description')
+#3 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'description', Array)
+#4 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(User), 'description', Array)
+#5 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /volume1/web/YesItIs/protected/views/user/admin.php(44): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#16 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#17 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#18 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#20 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#21 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#30 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#31 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:19:32 [error] [exception.CException] exception 'CException' with message 'Property "User.Role::description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Role::descripti...')
+#1 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('Role::descripti...')
+#2 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(User), 'Role::descripti...')
+#3 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'Role::descripti...', Array)
+#4 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(User), 'Role::descripti...', Array)
+#5 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /volume1/web/YesItIs/protected/views/user/admin.php(44): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#16 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#17 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#18 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#20 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#21 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#30 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#31 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:21:34 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(User), 'description')
+#3 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'description', Array)
+#4 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(User), 'description', Array)
+#5 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /volume1/web/YesItIs/protected/views/user/admin.php(58): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#16 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#17 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#18 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#20 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#21 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#30 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#31 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:25:41 [error] [exception.CException] exception 'CException' with message 'Property "User.description" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('description')
+#2 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(User), 'description')
+#3 /volume1/web/YesItIs/yii/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'description', Array)
+#4 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CDataColumn.php(103): CHtml::activeTextField(Object(User), 'description', Array)
+#5 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#6 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(532): CGridColumn->renderFilterCell()
+#7 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(510): CGridView->renderFilter()
+#8 /volume1/web/YesItIs/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#9 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 /volume1/web/YesItIs/yii/framework/zii/widgets/CBaseListView.php(135): CBaseListView->renderContent()
+#13 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(173): CBaseListView->run()
+#14 /volume1/web/YesItIs/protected/views/user/admin.php(71): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#16 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#17 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#18 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#19 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#20 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#21 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#24 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#28 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#30 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#31 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#32 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=role/index
+---
+2014/07/18 11:35:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /volume1/web/YesItIs/protected/controllers/UserController.php:152
+Stack trace:
+#0 /volume1/web/YesItIs/protected/controllers/UserController.php(46): UserController->loadModel('3')
+#1 [internal function]: UserController->actionView('3')
+#2 /volume1/web/YesItIs/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/view&id=3
+---
+2014/07/18 11:38:49 [error] [php] strpos() expects parameter 1 to be string, array given (/volume1/web/YesItIs/yii/framework/web/CController.php:706)
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(867): UserController->getViewFile()
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(782): UserController->renderPartial()
+#2 /volume1/web/YesItIs/protected/controllers/UserController.php(144): UserController->render()
+#3 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): UserController->runAction()
+#6 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#9 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /volume1/web/YesItIs/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#12 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): UserController->run()
+#13 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /volume1/web/YesItIs/index.php(13): CWebApplication->run()
+REQUEST_URI=/YesItIs/index.php?r=user/index
+in /volume1/web/YesItIs/protected/controllers/UserController.php (144)
+in /volume1/web/YesItIs/index.php (13)
+2014/07/18 13:09:13 [error] [exception.CException] exception 'CException' with message 'CList and its behaviors do not have a method or closure named "setReadOnly".' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/user/admin.php(55): CComponent->__call('setReadOnly', Array)
+#1 /volume1/web/YesItIs/protected/views/user/admin.php(55): CList->setReadOnly(true)
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#3 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#6 /volume1/web/YesItIs/protected/controllers/UserController.php(140): CController->render('admin', Array)
+#7 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionIndex()
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#17 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/index')
+#18 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/YesItIs/index.php?r=user/index
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php?r=user/view&id=2
+---
+2014/07/18 14:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in /volume1/web/YesItIs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('about')
+#1 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/YesItIs/index.php/about
+---
+2014/07/18 14:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in /volume1/web/YesItIs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('about')
+#1 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/YesItIs/index.php/about
+---
+2014/07/18 15:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/about
+---
+2014/07/18 15:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/about
+---
+2014/07/18 15:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/about
+---
+2014/07/18 15:11:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/page
+---
+2014/07/18 15:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/about
+---
+2014/07/18 15:11:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/page
+---
+2014/07/18 15:12:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('Page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/Page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/Page
+---
+2014/07/18 15:12:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/page
+---
+2014/07/18 15:12:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page/ca...')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/page/cau
+---
+2014/07/18 15:12:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page/1')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/page/1
+---
+2014/07/18 15:22:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page/1')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/page/1
+---
+2014/07/18 15:35:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/about
+---
+2014/07/18 15:37:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiiFramework2.Website' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Website`.
+in /volume1/web/YesItIs/index.php (13)
+2014/07/18 15:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/about
+---
+2014/07/18 15:39:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/about
+---
+2014/07/18 15:40:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:41:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:42:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:42:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:42:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page/1
+---
+2014/07/18 15:43:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page/ca...')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page/cau
+---
+2014/07/18 15:43:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/about
+---
+2014/07/18 15:43:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/2
+---
+2014/07/18 15:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/2
+---
+2014/07/18 15:45:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('view')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/3
+---
+2014/07/18 15:45:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/18 15:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page=3".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('page=3')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page=3')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page=3')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/page=3
+---
+2014/07/18 15:45:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page/3
+---
+2014/07/18 16:34:08 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.breadcrumbs" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/website/index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(15): CController->render('index', Array)
+#6 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/index')
+#12 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/YesItIs/index.php?r=website/index
+---
+2014/07/18 16:35:04 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.breadcrumbs" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/website/index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(15): CController->render('index', Array)
+#6 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/index')
+#12 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/YesItIs/index.php/website/index
+---
+2014/07/18 16:36:05 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.breadcrumbs" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/website/index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(15): CController->render('index', Array)
+#6 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/index')
+#12 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/YesItIs/index.php/website/index
+---
+2014/07/18 16:36:11 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.breadcrumbs" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/website/index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(15): CController->render('index', Array)
+#6 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website')
+#12 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/YesItIs/index.php/website
+---
+2014/07/18 16:37:34 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.breadcrumbs" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/website/index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(15): CController->render('index', Array)
+#6 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website')
+#12 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/YesItIs/index.php/website
+---
+2014/07/18 16:37:48 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.breadcrumbs" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /volume1/web/YesItIs/protected/views/website/index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(126): require('/volume1/web/Ye...')
+#2 /volume1/web/YesItIs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/volume1/web/Ye...', Array, true)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(869): CBaseController->renderFile('/volume1/web/Ye...', Array, true)
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(15): CController->render('index', Array)
+#6 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website')
+#12 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/YesItIs/index.php/website/
+---
+2014/07/18 17:22:39 [error] [exception.CException] exception 'CException' with message 'Property "WebsiteController.Array" is not defined.' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /volume1/web/YesItIs/protected/controllers/WebsiteController.php(16): CComponent->__get('Array')
+#1 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): WebsiteController->actionIndex()
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#6 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website')
+#7 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/YesItIs/index.php/website/
+---
+2014/07/21 17:04:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:05:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:05:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('Getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/Getusers
+---
+2014/07/21 17:05:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('Getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/Getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/Getusers
+---
+2014/07/21 17:05:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:06:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getuser".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('getuser')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+---
+2014/07/21 17:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getuser".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('getuser')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+---
+2014/07/21 17:07:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:08:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:08:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:12:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:15:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+HTTP_REFERER=http://192.168.1.102/YesItIs/index.php/site/login
+---
+2014/07/21 17:16:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/getusers".' in /volume1/web/YesItIs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/getusers')
+#1 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/YesItIs/index.php/users/getusers
+---
+2014/07/21 17:16:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 17:24:10 [error] [exception.CException] exception 'CException' with message 'UserController and its behaviors do not have a method or closure named "convertModelToArray".' in /volume1/web/YesItIs/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /volume1/web/YesItIs/protected/controllers/UserController.php(150): CComponent->__call('convertModelToA...', Array)
+#1 /volume1/web/YesItIs/protected/controllers/UserController.php(150): UserController->convertModelToArray(Array)
+#2 /volume1/web/YesItIs/yii/framework/web/actions/CInlineAction.php(49): UserController->actionGetusers()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getusers')
+#12 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getusers')
+#13 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/YesItIs/index.php/user/getusers
+---
+2014/07/21 19:12:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page/ca...')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page/cau
+---
+2014/07/21 19:12:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/page
+---
+2014/07/21 19:12:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('Page')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/Page')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/Page
+---
+2014/07/21 19:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('about')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/about')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/about
+---
+2014/07/21 19:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "a".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('a')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('a')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/a')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/a
+---
+2014/07/21 19:19:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "a".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('a')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('a')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/a')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/a
+---
+2014/07/21 19:20:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "a".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('a')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('a')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/a')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/a
+---
+2014/07/21 19:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/b".' in /volume1/web/YesItIs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('page/b')
+#1 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/YesItIs/index.php/page/b
+---
+2014/07/21 19:20:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "p".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('p')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('p')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/p')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/p
+---
+2014/07/21 19:20:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view
+---
+2014/07/21 19:21:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/c')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/c
+---
+2014/07/21 19:21:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/b')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/b
+---
+2014/07/21 19:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view&id=1".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('view&id=1')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view&id=1')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view&id...')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/view&id=1
+---
+2014/07/21 19:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view&alias=1".' in /volume1/web/YesItIs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(270): CController->missingAction('view&alias=1')
+#1 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view&alias=1')
+#2 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view&al...')
+#3 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/YesItIs/index.php/website/view&alias=1
+---
+2014/07/21 19:39:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/a')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/a
+---
+2014/07/21 19:40:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/av')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/av
+---
+2014/07/21 19:40:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/vv')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/vv
+---
+2014/07/21 19:40:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/8')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/8
+---
+2014/07/21 19:40:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/8')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/8
+---
+2014/07/21 19:40:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/b')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/b
+---
+2014/07/21 19:45:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/b')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/b
+---
+2014/07/21 19:45:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('website/view/bs')
+#5 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/YesItIs/index.php/website/view/bs
+---
+2014/07/21 19:51:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#9 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+---
+2014/07/21 19:52:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+---
+2014/07/21 19:52:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser/1')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser/1
+---
+2014/07/21 19:52:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser/2')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser/2
+---
+2014/07/21 19:52:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser/3')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser/3
+---
+2014/07/21 21:25:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+HTTP_REFERER=http://192.168.1.102/YesItIs/test.php
+---
+2014/07/21 21:26:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+HTTP_REFERER=http://192.168.1.102/YesItIs/test.php
+---
+2014/07/21 21:27:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /volume1/web/YesItIs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /volume1/web/YesItIs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /volume1/web/YesItIs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /volume1/web/YesItIs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /volume1/web/YesItIs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /volume1/web/YesItIs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /volume1/web/YesItIs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /volume1/web/YesItIs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(282): CController->run('getuser')
+#9 /volume1/web/YesItIs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/getuser')
+#10 /volume1/web/YesItIs/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /volume1/web/YesItIs/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/YesItIs/index.php/user/getuser
+---
