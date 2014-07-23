@@ -7,5 +7,5 @@
  */
 
 
-    echo "cauko"
+    echo "cauko";
 ?>
