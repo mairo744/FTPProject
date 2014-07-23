@@ -6,6 +6,6 @@
  * Time: 12:58
  */
 
-echo "git";
-echo "cauko";
+echo "git";echo "git";echo "git";
+
 ?>
