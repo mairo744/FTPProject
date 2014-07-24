@@ -50,10 +50,10 @@
 
 
     <div id="getusers">
-        Tu najdete mena uzivatelov: <br/>
+        <b> Tu najdete mena uzivatelov: </b> <br/>
     </div>
     <div id="getuser">
-        Uzivatel s id 2:
+        <b> Uzivatel s id 2: </b>
     </div>
 </body>
 </html>
