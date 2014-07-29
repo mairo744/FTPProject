@@ -6,6 +6,7 @@
  * Time: 20:48
  */
 
+
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +54,8 @@
         <b> Tu najdete mena uzivatelov: </b> <br/>
     </div>
     <div id="getuser">
-        <b> Uzivatel s id 2: </b>
+        <b> Uzivatel s id 2 cez jQuery: </b>
     </div>
+
 </body>
 </html>
