@@ -11,6 +11,13 @@ $this->menu=array(
 
 <h1>Manage Users</h1>
 
+<p>Hello call. <?php $this->hello()?></p>
+<?php
+$this->widget('zii.widgets.CMenu',array('items'=>array(
+        array('label'=>'Home', 'url'=>array('index')),
+        array('label'=>'Yiiframework home','url'=>'http://yiiframework.ru/'), ),
+))?>
+
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'user-grid',
 	'dataProvider'=>$model->with('role')->search(),

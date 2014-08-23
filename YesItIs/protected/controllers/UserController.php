@@ -55,6 +55,7 @@ class UserController extends Controller
 	{
 		$model=new User;
 
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -131,6 +132,7 @@ class UserController extends Controller
 	public function actionIndex()
 	{
 		$model=new User('search');
+
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['User']))
 			$model->attributes=$_GET['User'];
@@ -206,5 +208,13 @@ class UserController extends Controller
                 $result = $all;
         }
         return $result;
+    }
+
+    function hello()
+    {
+        if(!empty($_GET['name']))
+            echo 'Hello, '.$_GET['name'].'!';
+        else
+            echo 'Anonym';
     }
 }
